@@ -1,0 +1,73 @@
+mat-expansion-panel.menu-container {
+  @apply rounded-b-3xl;
+
+  ::ng-deep .mat-expansion-panel-body {
+    @apply p-9;
+  }
+
+  li {
+    @apply mb-8;
+  }
+
+  a {
+    @apply font-poppins font-bold text-primary hover:text-secondary px-1;
+  }
+}
+
+mat-expansion-panel.menu-item-container {
+  @apply shadow-none border-0;
+
+  ::ng-deep mat-expansion-panel-header {
+    @apply py-0 px-1 h-auto;
+
+    &:hover {
+      background-color: transparent !important;
+
+      mat-panel-title {
+        @apply text-secondary;
+      }
+
+      .mat-expansion-indicator::after {
+        @apply border-secondary;
+      }
+    }
+
+    &.mat-expanded {
+      background-color: transparent !important;
+
+      mat-panel-title {
+        @apply text-secondary;
+      }
+
+      .mat-expansion-indicator::after {
+        @apply border-secondary;
+      }
+    }
+
+    mat-panel-title {
+      @apply font-poppins font-bold text-primary;
+    }
+
+    .mat-expansion-indicator::after {
+      @apply border-primary;
+    }
+  }
+
+  ::ng-deep .mat-expansion-panel-body {
+    @apply p-4 pb-0;
+  }
+
+  li {
+    @apply mb-3 last:mb-0;
+  }
+
+  a {
+    @apply font-poppins font-normal text-primary hover:text-secondary border-b border-primary p-0 hover:border-secondary;
+  }
+}
+
+mat-expansion-panel {
+  ::ng-deep .mat-expansion-panel-content {
+    @apply leading-normal;
+  }
+}

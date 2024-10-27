@@ -1,0 +1,68 @@
+<header class="shadow-sm">
+  <nav class="flex items-center justify-between p-5">
+    <img src="../../../../assets/virtu.svg" alt="Virtu" />
+    <button (click)="expandMenu()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
+        viewBox="0 -960 960 960"
+        width="40px"
+        fill="#9063CD">
+        <path
+          d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+      </svg>
+    </button>
+  </nav>
+
+  <mat-expansion-panel class="menu-container shadow-sm" [expanded]="isExpanded">
+    <nav>
+      <ul>
+        <li>
+          <a class="font-poppins" href="">Home</a>
+        </li>
+        <li>
+          <mat-expansion-panel class="menu-item-container">
+            <mat-expansion-panel-header>
+              <mat-panel-title>Solutions</mat-panel-title>
+            </mat-expansion-panel-header>
+            <nav>
+              <ul>
+                <li>
+                  <a href="">Analytics Portal</a>
+                </li>
+                <li>
+                  <a href="">Imaging</a>
+                </li>
+                <li>
+                  <a href="">Practice Management</a>
+                </li>
+                <li>
+                  <a href="">Revenue Cycle Management</a>
+                </li>
+              </ul>
+            </nav>
+          </mat-expansion-panel>
+        </li>
+        <li>
+          <a href="">Industries</a>
+        </li>
+        <li>
+          <a href="">About us</a>
+        </li>
+        <li>
+          <a href="">Resources</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center justify-between">
+      <button class="bg-tertiary rounded-lg px-5 py-2.5 font-bold text-primary">
+        Contact us
+      </button>
+      <button
+        class="bg-purple text-lightPurple rounded-lg px-5 py-2.5 font-bold">
+        User portal
+      </button>
+    </div>
+  </mat-expansion-panel>
+</header>

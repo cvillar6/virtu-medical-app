@@ -13,6 +13,10 @@ module.exports = {
       },
       colors: {
         primary: '#062052',
+        secondary: '#7DB2E3',
+        tertiary: '#71DBD4',
+        purple: '#340573',
+        lightPurple: '#D6C0F3',
       },
     },
   },

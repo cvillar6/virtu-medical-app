@@ -5,5 +5,13 @@
 @tailwind utilities;
 
 body {
-  @apply font-poppins;
+  @apply font-poppins text-primary;
+}
+
+.virtu-container {
+  @apply px-5;
+}
+
+.virtu-card {
+  @apply bg-white shadow-lg rounded-3xl p-5;
 }

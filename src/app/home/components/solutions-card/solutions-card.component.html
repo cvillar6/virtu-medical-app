@@ -1,0 +1,18 @@
+<article class="virtu-card">
+  <div class="mb-5">
+    <h2 class="text-lg font-bold">{{ title }}</h2>
+  </div>
+  <div class="mb-5">
+    <img [src]="image" [alt]="title" />
+  </div>
+  <div class="mb-5">
+    <p class="text-sm">
+      {{ description }}
+    </p>
+  </div>
+  <div class="pl-8">
+    <ul>
+      <li class="text-sm" *ngFor="let feature of list">• {{ feature }}</li>
+    </ul>
+  </div>
+</article>

@@ -1,1 +1,37 @@
-<p>feedback works!</p>
+<article class="virtu-container">
+  <div>
+    <h2 class="text-center text-2xl font-bold">
+      This is what our clients say about Virtu
+    </h2>
+  </div>
+
+  <ul class="flex flex-col gap-2.5">
+    <li>
+      <app-feedback-card
+        [name]="'Jhon Williams'"
+        [photo]="'assets/feedback/person-1.png'"
+        [date]="'June 3, 2024'"
+        [feedback]="
+          'Since adopting VIRTU, compliance has never been easier. The documentation is so thorough, and it has streamlined our audit processes significantly.'
+        " />
+    </li>
+    <li>
+      <app-feedback-card
+        [name]="'Jhon Williams'"
+        [photo]="'assets/feedback/person-1.png'"
+        [date]="'June 3, 2024'"
+        [feedback]="
+          'Since adopting VIRTU, compliance has never been easier. The documentation is so thorough, and it has streamlined our audit processes significantly.'
+        " />
+    </li>
+    <li>
+      <app-feedback-card
+        [name]="'Jhon Williams'"
+        [photo]="'assets/feedback/person-1.png'"
+        [date]="'June 3, 2024'"
+        [feedback]="
+          'Since adopting VIRTU, compliance has never been easier. The documentation is so thorough, and it has streamlined our audit processes significantly.'
+        " />
+    </li>
+  </ul>
+</article>

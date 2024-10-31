@@ -8,6 +8,7 @@ import { SolutionsCardComponent } from './components/solutions-card/solutions-ca
 import { FeaturesCarouselComponent } from './components/features-carousel/features-carousel.component';
 import { FeaturesCardComponent } from './components/features-card/features-card.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { FeedbackCardComponent } from './components/feedback-card/feedback-card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     FeaturesCarouselComponent,
     FeaturesCardComponent,
     FeedbackComponent,
+    FeedbackCardComponent,
   ],
   imports: [CommonModule, HomeRoutingModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

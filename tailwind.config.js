@@ -20,6 +20,12 @@ module.exports = {
         accentPurple: '#9063CD',
       },
     },
+    fontSize: {
+      sm: ['14px', { lineHeight: '24px' }],
+      base: ['16px', { lineHeight: '24px' }],
+      lg: ['18px', { lineHeight: '26px' }],
+      '2xl': ['24px', { lineHeight: '32px' }],
+    },
   },
   plugins: [],
 };

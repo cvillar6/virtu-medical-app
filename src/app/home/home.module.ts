@@ -10,6 +10,7 @@ import { FeaturesCardComponent } from './components/features-card/features-card.
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { FeedbackCardComponent } from './components/feedback-card/feedback-card.component';
 import { InfoComponent } from './components/info/info.component';
+import { PartnersComponent } from './components/partners/partners.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { InfoComponent } from './components/info/info.component';
     FeedbackComponent,
     FeedbackCardComponent,
     InfoComponent,
+    PartnersComponent,
   ],
   imports: [CommonModule, HomeRoutingModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

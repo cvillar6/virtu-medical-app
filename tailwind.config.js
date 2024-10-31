@@ -17,6 +17,7 @@ module.exports = {
         tertiary: '#71DBD4',
         purple: '#340573',
         lightPurple: '#D6C0F3',
+        accentPurple: '#9063CD',
       },
     },
   },

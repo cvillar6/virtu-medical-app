@@ -9,6 +9,7 @@ import { FeaturesCarouselComponent } from './components/features-carousel/featur
 import { FeaturesCardComponent } from './components/features-card/features-card.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { FeedbackCardComponent } from './components/feedback-card/feedback-card.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FeedbackCardComponent } from './components/feedback-card/feedback-card.
     FeaturesCardComponent,
     FeedbackComponent,
     FeedbackCardComponent,
+    InfoComponent,
   ],
   imports: [CommonModule, HomeRoutingModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

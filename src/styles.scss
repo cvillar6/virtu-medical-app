@@ -9,7 +9,7 @@ body {
 }
 
 .virtu-container {
-  @apply px-5;
+  @apply px-5 lg:px-0;
 }
 
 .virtu-card {

@@ -1,30 +1,71 @@
 <article class="pl-5">
-  <swiper-container
-    class="mySwiper"
-    space-between="30"
-    slides-per-view="auto"
-    pagination="true"
-    pagination-clickable="true">
-    <swiper-slide>
+  <div class="virtu-container mb-5 lg:mb-20">
+    <p class="text-sm lg:px-32 lg:text-center lg:text-base">
+      VIRTU addresses Medical Centers' challenges head-on with a suite of
+      integrated solutions designed to streamline operations, improve patient
+      care, and enhance decision making. Our platform, including the Analytics
+      portal and several add-on packages, offers
+    </p>
+  </div>
+
+  <ng-container *ngIf="!isDesktop; else desktopGrid">
+    <swiper-container
+      class="mySwiper"
+      space-between="30"
+      slides-per-view="auto"
+      pagination="true"
+      pagination-clickable="true">
+      <swiper-slide>
+        <app-features-card
+          [title]="'Analytics Portal'"
+          [description]="
+            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+          " />
+      </swiper-slide>
+      <swiper-slide>
+        <app-features-card
+          [title]="'Analytics Portal'"
+          [description]="
+            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+          " />
+      </swiper-slide>
+      <swiper-slide>
+        <app-features-card
+          [title]="'Analytics Portal'"
+          [description]="
+            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+          " />
+      </swiper-slide>
+    </swiper-container>
+  </ng-container>
+
+  <ng-template #desktopGrid>
+    <div class="grid grid-cols-3 gap-2.5">
       <app-features-card
+        [title]="'Analytics Portal'"
+        [description]="
+          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules. '
+        " /><app-features-card
+        [title]="'Analytics Portal'"
+        [description]="
+          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+        " /><app-features-card
+        [title]="'Analytics Portal'"
+        [description]="
+          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+        " /><app-features-card
+        [title]="'Analytics Portal'"
+        [description]="
+          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+        " /><app-features-card
+        [title]="'Analytics Portal'"
+        [description]="
+          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+        " /><app-features-card
         [title]="'Analytics Portal'"
         [description]="
           'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
         " />
-    </swiper-slide>
-    <swiper-slide>
-      <app-features-card
-        [title]="'Analytics Portal'"
-        [description]="
-          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
-        " />
-    </swiper-slide>
-    <swiper-slide>
-      <app-features-card
-        [title]="'Analytics Portal'"
-        [description]="
-          'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
-        " />
-    </swiper-slide>
-  </swiper-container>
+    </div>
+  </ng-template>
 </article>

@@ -19,12 +19,20 @@ module.exports = {
         lightPurple: '#D6C0F3',
         accentPurple: '#9063CD',
       },
+      backgroundImage: {
+        'main-banner-mobile': "url('/assets/home/main-banner-mobile.png')",
+        'main-banner-background':
+          "url('/assets/home/main-banner-background.png')",
+      },
     },
     fontSize: {
       sm: ['14px', { lineHeight: '24px' }],
       base: ['16px', { lineHeight: '24px' }],
       lg: ['18px', { lineHeight: '26px' }],
+      xl: ['20px', { lineHeight: '28px' }],
       '2xl': ['24px', { lineHeight: '32px' }],
+      '3xl': ['28px', { lineHeight: '36px' }],
+      '4xl': ['40px', { lineHeight: '48px' }],
     },
   },
   plugins: [],

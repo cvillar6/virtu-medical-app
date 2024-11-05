@@ -1,4 +1,4 @@
-<article class="virtu-card">
+<article *ngIf="!isDesktop; else desktopCard" class="virtu-card">
   <div class="mb-5">
     <h2 class="text-lg font-bold">{{ title }}</h2>
   </div>
@@ -16,3 +16,32 @@
     </ul>
   </div>
 </article>
+
+<ng-template #desktopCard>
+  <article class="virtu-card flex items-center justify-between gap-8">
+    <div>
+      <img [src]="image" [alt]="title" />
+    </div>
+    <div>
+      <div class="mb-5">
+        <h2 class="lg:text-xl text-lg font-bold">{{ title }}</h2>
+      </div>
+      <div class="flex items-center gap-8">
+        <div class="w-1/2">
+          <div>
+            <p class="text-sm lg:text-base">
+              {{ description }}
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2 pr-4">
+          <ul>
+            <li class="text-sm lg:text-base" *ngFor="let feature of list">
+              • {{ feature }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+</ng-template>

@@ -1,0 +1,13 @@
+<article class="virtu-container">
+  <div class="mb-3">
+    <h2 class="text-center text-2xl font-bold">{{ title }}</h2>
+  </div>
+  <div>
+    <img [src]="image" [alt]="title" />
+  </div>
+  <div>
+    <p *ngFor="let paragraph of description" class="mb-6 text-sm last:mb-0">
+      {{ description }}
+    </p>
+  </div>
+</article>

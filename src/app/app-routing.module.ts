@@ -13,6 +13,11 @@ const routes: Routes = [
         m => m.AnalyticsPortalModule
       ),
   },
+  {
+    path: 'industries',
+    loadChildren: () =>
+      import('./industries/industries.module').then(m => m.IndustriesModule),
+  },
 ];
 
 @NgModule({

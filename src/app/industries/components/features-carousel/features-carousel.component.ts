@@ -17,6 +17,11 @@ export class FeaturesCarouselComponent implements OnDestroy {
         : (this.isDesktop = false);
     });
 
+    breakpointsConfig = {
+      320: { slidesPerView: 'auto' },
+      1024: { slidesPerView: 1 },
+    };
+
   constructor(private breakpointObserverService: BreakpointObserverService) {}
 
   ngOnDestroy(): void {

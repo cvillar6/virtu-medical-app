@@ -23,6 +23,7 @@ module.exports = {
         'main-banner-mobile': "url('/assets/home/main-banner-mobile.png')",
         'main-banner-background':
           "url('/assets/home/main-banner-background.png')",
+        'industries-banner': "url('/assets/industries/industries-banner.png')",
       },
     },
     fontSize: {
@@ -33,6 +34,8 @@ module.exports = {
       '2xl': ['24px', { lineHeight: '32px' }],
       '3xl': ['28px', { lineHeight: '36px' }],
       '4xl': ['40px', { lineHeight: '48px' }],
+      '5xl': ['54px', { lineHeight: '34px' }],
+      '6xl': ['80px', { lineHeight: '36px' }],
     },
   },
   plugins: [],

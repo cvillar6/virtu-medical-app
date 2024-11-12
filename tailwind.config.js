@@ -17,7 +17,9 @@ module.exports = {
         tertiary: '#71DBD4',
         purple: '#340573',
         lightPurple: '#D6C0F3',
+        lightPurple2: '#F5EDFF',
         accentPurple: '#9063CD',
+        lightGreen: '#DFFFFD',
       },
       backgroundImage: {
         'main-banner-mobile': "url('/assets/home/main-banner-mobile.png')",

@@ -1,0 +1,35 @@
+<form
+  class="mx-auto max-w-[830px]"
+  [formGroup]="contactUsForm"
+  (ngSubmit)="onSubmit()">
+  <div class="lg:flex lg:gap-x-5">
+    <input
+      class="mb-2.5 w-full rounded-lg border border-primary px-5 py-2 text-sm placeholder:text-primary"
+      type="text"
+      formControlName="name"
+      placeholder="Name" />
+    <input
+      class="mb-2.5 w-full rounded-lg border border-primary px-5 py-2 text-sm placeholder:text-primary"
+      type="text"
+      formControlName="email"
+      placeholder="Email" />
+  </div>
+  <input
+    class="mb-2.5 w-full rounded-lg border border-primary px-5 py-2 text-sm placeholder:text-primary"
+    type="text"
+    formControlName="phone"
+    placeholder="Phone" />
+  <textarea
+    class="mb-8 w-full resize-none rounded-lg border border-primary px-5 py-2 text-sm placeholder:text-primary"
+    type="text"
+    formControlName="message"
+    placeholder="Message">
+  </textarea>
+
+  <div class="flex justify-center lg:justify-end">
+    <button
+      class="rounded-lg bg-tertiary px-5 py-3.5 text-sm font-bold text-primary">
+      Submit
+    </button>
+  </div>
+</form>

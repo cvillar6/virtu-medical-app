@@ -12,13 +12,6 @@ const routes: Routes = [
       import('./solutions/solutions.module').then(m => m.SolutionsModule),
   },
   {
-    path: 'analytics-portal',
-    loadChildren: () =>
-      import('./analytics-portal/analytics-portal.module').then(
-        m => m.AnalyticsPortalModule
-      ),
-  },
-  {
     path: 'industries',
     loadChildren: () =>
       import('./industries/industries.module').then(m => m.IndustriesModule),

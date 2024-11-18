@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
+import { BannerComponent } from './components/banner/banner.component';
 import { ContactUsFormComponent } from './components/contact-us-form/contact-us-form.component';
 import { FeatureBannerComponent } from './components/feature-banner/feature-banner.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -17,6 +18,7 @@ import { KeyFeatureComponent } from './components/key-feature/key-feature.compon
     ContactUsFormComponent,
     FeatureBannerComponent,
     KeyFeatureComponent,
+    BannerComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,7 @@ import { KeyFeatureComponent } from './components/key-feature/key-feature.compon
     FooterComponent,
     FeatureBannerComponent,
     KeyFeatureComponent,
+    BannerComponent,
   ],
 })
 export class SharedModule {}

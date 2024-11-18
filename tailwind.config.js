@@ -13,9 +13,12 @@ module.exports = {
       },
       colors: {
         primary: '#062052',
+        primaryHover: '#1D4289',
         secondary: '#7DB2E3',
         tertiary: '#71DBD4',
+        tertiaryHover: '#C2F6F3',
         purple: '#340573',
+        purpleHover: '#9063CD',
         lightPurple: '#D6C0F3',
         lightPurple2: '#F5EDFF',
         accentPurple: '#9063CD',

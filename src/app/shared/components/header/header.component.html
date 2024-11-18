@@ -80,15 +80,130 @@
             >Home</a
           >
         </li>
-        <li>
+        <li class="solutions relative">
           <a class="text-sm font-bold text-primary hover:text-secondary" href=""
             >Solutions</a
           >
+          <div
+            #solutionsMenu
+            class="solutions-menu absolute left-0 top-full z-10 hidden w-screen translate-x-[-40%] items-center justify-center bg-white">
+            <div class="flex">
+              <img
+                class="h-[315px] w-[315px]"
+                src="assets/header/header.png"
+                alt="Solutions" />
+            </div>
+            <div class="border-l border-secondary pl-5">
+              <nav>
+                <ul>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      [routerLink]="['/analytics-portal']"
+                      >Analytics portal</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      [routerLink]="['/analytics-portal/imaging']"
+                      >Imaging</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Hospitalization</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Referral management</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Patient Outreach</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Disenrollment</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </li>
-        <li>
+        <li class="industries relative">
           <a class="text-sm font-bold text-primary hover:text-secondary" href=""
             >Industries</a
           >
+          <div
+            class="industries-menu absolute left-0 top-full z-10 hidden w-screen translate-x-[-46%] items-center justify-center bg-white">
+            <div class="flex">
+              <img
+                class="h-[315px] w-[315px]"
+                src="assets/header/header.png"
+                alt="Industries" />
+            </div>
+            <div class="border-l border-secondary pl-5">
+              <nav>
+                <ul>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      [routerLink]="['/analytics-portal']"
+                      >Analytics portal</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      [routerLink]="['/analytics-portal/imaging']"
+                      >Imaging</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Hospitalization</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Referral management</a
+                    >
+                  </li>
+                  <li class="mb-2.5">
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Patient Outreach</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
+                      href=""
+                      >Disenrollment</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </li>
         <li>
           <a class="text-sm font-bold text-primary hover:text-secondary" href=""
@@ -104,11 +219,11 @@
     </nav>
     <nav class="flex items-center gap-2.5">
       <button
-        class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary">
+        class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary hover:bg-tertiaryHover hover:text-primaryHover">
         Contact us
       </button>
       <button
-        class="rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple">
+        class="rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple hover:bg-purpleHover hover:text-lightPurple2">
         User portal
       </button>
     </nav>

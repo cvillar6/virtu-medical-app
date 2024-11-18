@@ -71,3 +71,13 @@ mat-expansion-panel {
     @apply leading-normal;
   }
 }
+
+.solutions:hover .solutions-menu,
+.solutions-menu:hover {
+  display: flex;
+}
+
+.industries:hover .industries-menu,
+.industries-menu:hover {
+  display: flex;
+}

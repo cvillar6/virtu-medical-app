@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DisenrollmentPageComponent } from './pages/disenrollment-page/disenrollment-page.component';
 import { HospitalizationPageComponent } from './pages/hospitalization-page/hospitalization-page.component';
 import { ImagingPageComponent } from './pages/imaging-page/imaging-page.component';
 import { PatientOutreachPageComponent } from './pages/patient-outreach-page/patient-outreach-page.component';
+import { ReferralManagementPageComponent } from './pages/referral-management-page/referral-management-page.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,14 @@ const routes: Routes = [
   {
     path: 'patient-outreach',
     component: PatientOutreachPageComponent,
+  },
+  {
+    path: 'referral-management',
+    component: ReferralManagementPageComponent,
+  },
+  {
+    path: 'disenrollment',
+    component: DisenrollmentPageComponent,
   },
   {
     path: '**',

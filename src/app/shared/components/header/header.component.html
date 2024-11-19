@@ -81,7 +81,9 @@
           >
         </li>
         <li class="solutions relative">
-          <a class="text-sm font-bold text-primary hover:text-secondary" href=""
+          <a
+            class="text-sm font-bold text-primary hover:text-secondary"
+            [routerLink]="['/solutions']"
             >Solutions</a
           >
           <div
@@ -99,21 +101,21 @@
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      [routerLink]="['/analytics-portal']"
+                      [routerLink]="['solutions/analytics-portal']"
                       >Analytics portal</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      [routerLink]="['/analytics-portal/imaging']"
+                      [routerLink]="['/solutions/imaging']"
                       >Imaging</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
+                      [routerLink]="['/solutions/hospitalization']"
                       >Hospitalization</a
                     >
                   </li>
@@ -127,7 +129,7 @@
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
+                      [routerLink]="['/solutions/patient-outreach']"
                       >Patient Outreach</a
                     >
                   </li>

@@ -1,15 +1,18 @@
 <article>
   <div class="virtu-container mb-5">
-    <h2 class="lg:text-3xl text-2xl font-bold lg:text-center">
+    <h2 class="text-2xl font-bold lg:text-center lg:text-3xl">
       Our Comprehensive Healthcare Solutions
     </h2>
   </div>
   <div class="virtu-container mb-5">
-    <p class="text-sm lg:text-base">
+    <p class="mb-6 text-sm lg:text-base">
       At Virtu Medical, we offer a suite of solutions designed to empower
       healthcare providers with the tools they need to optimize patient care,
-      streamline operations, and drive better outcomes. Explore our innovative
-      solutions, crafted to meet the unique challenges of modern healthcare.
+      streamline operations, and drive better outcomes.
+    </p>
+    <p class="text-sm lg:text-base">
+      Explore our innovative solutions, crafted to meet the unique challenges of
+      modern healthcare.
     </p>
   </div>
   <div class="pl-5">
@@ -25,39 +28,83 @@
           [title]="'Analytics Portal'"
           [image]="'/assets/graph-1.png'"
           [description]="
-            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules:'
           "
           [list]="[
-            'Predictive analytics',
-            'Real-time data',
-            'Customizable dashboards',
+            'Membership',
+            'Complex Cases',
+            'Labs',
+            'Claims',
+            'Billing & Coding',
+            'Revenue',
+            'Reports',
           ]"
       /></swiper-slide>
       <swiper-slide
         ><app-solutions-card
-          [title]="'Analytics Portal'"
+          [title]="'Imaging'"
           [image]="'/assets/graph-1.png'"
           [description]="
-            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+            'Streamline imaging appointments and manage records with ease. Securely upload, review, and download imaging results without the need for physical media.'
           "
           [list]="[
-            'Predictive analytics',
-            'Real-time data',
-            'Customizable dashboards',
+            'Seamless Record Management',
+            'Improved Patient Experience',
           ]"
       /></swiper-slide>
       <swiper-slide
         ><app-solutions-card
-          [title]="'Analytics Portal'"
+          [title]="'Hospitalization'"
           [image]="'/assets/graph-1.png'"
           [description]="
-            'Our Analytics Portal is your command center for healthcare management, providing a comprehensive view of your operations through the following powerful modules.'
+            'Efficiently manage inpatient care, track admissions, and ensure optimal resource allocation for better patient outcomes.'
           "
           [list]="[
-            'Predictive analytics',
-            'Real-time data',
-            'Customizable dashboards',
+            'Improved Resource Utilization',
+            'Streamlined Patient Flow',
           ]"
+      /></swiper-slide>
+      <swiper-slide
+        ><app-solutions-card
+          [title]="'Referral Management'"
+          [image]="'/assets/graph-1.png'"
+          [description]="
+            'Improve referral processes with streamlined management, ensuring timely and accurate referrals that enhance patient care.'
+          "
+          [list]="['Efficient Referral Processes', 'Integrated Communication']"
+      /></swiper-slide>
+      <swiper-slide
+        ><app-solutions-card
+          [title]="'Patient Outreach'"
+          [image]="'/assets/graph-1.png'"
+          [description]="
+            'Enhance patient engagement with a multi-channel communication platform, including calls, texts, and emails, all tailored to patient preferences.'
+          "
+          [list]="[
+            'Increased Patient Engagement',
+            'Efficient Campaign Management',
+          ]"
+      /></swiper-slide>
+      <swiper-slide
+        ><app-solutions-card
+          [title]="'Transportation'"
+          [image]="'/assets/graph-1.png'"
+          [description]="
+            'Coordinate patient transportation seamlessly with our integrated system, including EHR integration, scheduling, and GPS tracking.'
+          "
+          [list]="[
+            'Enhanced Patient Accessibility',
+            'Improved Operational Efficiency',
+          ]"
+      /></swiper-slide>
+      <swiper-slide
+        ><app-solutions-card
+          [title]="'Disenrollment'"
+          [image]="'/assets/graph-1.png'"
+          [description]="
+            'Monitor and manage patient disenrollment with insights into trends, enabling proactive strategies to retain patients and improve satisfaction.'
+          "
+          [list]="['Proactive Patient Retention', 'Informed Decision Making']"
       /></swiper-slide>
     </swiper-container>
   </div>

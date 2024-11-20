@@ -146,7 +146,9 @@
           </div>
         </li>
         <li class="industries relative">
-          <a class="text-sm font-bold text-primary hover:text-secondary" href=""
+          <a
+            class="text-sm font-bold text-primary hover:text-secondary"
+            [routerLink]="['/industries']"
             >Industries</a
           >
           <div
@@ -163,43 +165,43 @@
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      [routerLink]="['/analytics-portal']"
-                      >Analytics portal</a
+                      [routerLink]="['/industries/aco']"
+                      >Accountable Care Organizations (ACOs)</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      [routerLink]="['/analytics-portal/imaging']"
-                      >Imaging</a
+                      [routerLink]="['/industries/value-based-care']"
+                      >Value-Based Care Providers</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
-                      >Hospitalization</a
+                      [routerLink]="['/industries/medicare']"
+                      >Medicare/Medicaid Payers</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
-                      >Referral management</a
+                      [routerLink]="['/industries/hospitals']"
+                      >Hospitals and Health Systems</a
                     >
                   </li>
                   <li class="mb-2.5">
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
-                      >Patient Outreach</a
+                      [routerLink]="['/industries/medicare-advantage']"
+                      >Medicare Advantage</a
                     >
                   </li>
                   <li>
                     <a
                       class="border-b border-primary text-sm hover:border-secondary hover:text-secondary"
-                      href=""
-                      >Disenrollment</a
+                      [routerLink]="['/industries/physician']"
+                      >Physician Groups</a
                     >
                   </li>
                 </ul>
@@ -208,7 +210,9 @@
           </div>
         </li>
         <li>
-          <a class="text-sm font-bold text-primary hover:text-secondary" href=""
+          <a
+            class="text-sm font-bold text-primary hover:text-secondary"
+            [routerLink]="['/about-us']"
             >About us</a
           >
         </li>
@@ -220,10 +224,11 @@
       </ul>
     </nav>
     <nav class="flex items-center gap-2.5">
-      <button
-        class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary hover:bg-tertiaryHover hover:text-primaryHover">
+      <a
+        class="cursor-pointer rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary hover:bg-tertiaryHover hover:text-primaryHover"
+        [routerLink]="['/contact-us']">
         Contact us
-      </button>
+      </a>
       <button
         class="rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple hover:bg-purpleHover hover:text-lightPurple2">
         User portal

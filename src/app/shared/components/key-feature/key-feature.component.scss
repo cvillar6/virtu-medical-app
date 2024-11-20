@@ -1,7 +1,0 @@
-::ng-deep mat-expansion-panel-header .mat-expansion-indicator::after {
-  @apply border-accentPurple;
-}
-
-::ng-deep mat-expansion-panel-header.mat-expanded mat-panel-title {
-  @apply border-b border-accentPurple;
-}

@@ -25,12 +25,12 @@ module.exports = {
         lightGreen: '#DFFFFD',
       },
       backgroundImage: {
-        'main-banner-mobile': "url('/assets/home/main-banner-mobile.png')",
+        'main-banner-mobile': "url('assets/home/main-banner-mobile.png')",
         'main-banner-background':
-          "url('/assets/home/main-banner-background.png')",
-        'industries-banner': "url('/assets/industries/industries-banner.png')",
-        'use-case-1': "url('/assets/industries/use-case-1.png')",
-        'use-case-2': "url('/assets/industries/use-case-2.png')",
+          "url('assets/home/main-banner-background.png')",
+        'industries-banner': "url('assets/industries/industries-banner.png')",
+        'use-case-1': "url('assets/industries/use-case-1.png')",
+        'use-case-2': "url('assets/industries/use-case-2.png')",
       },
     },
     fontSize: {

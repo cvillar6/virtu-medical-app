@@ -1,6 +1,6 @@
 <header *ngIf="!isDesktop; else desktopHeader" class="shadow-sm">
   <nav class="flex items-center justify-between p-5">
-    <img src="/assets/virtu.svg" alt="Virtu" />
+    <img src="assets/virtu.svg" alt="Virtu" />
     <button (click)="expandMenu()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@
 <ng-template #desktopHeader>
   <header
     class="desktop-header mx-auto flex max-w-[992px] items-center justify-between p-5">
-    <nav><img src="/assets/virtu.svg" alt="Virtu" /></nav>
+    <nav><img src="assets/virtu.svg" alt="Virtu" /></nav>
     <nav>
       <ul class="flex items-center justify-between gap-7">
         <li>

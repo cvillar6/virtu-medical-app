@@ -6,6 +6,11 @@ import { FeaturesCarouselComponent } from './components/features-carousel/featur
 import { IndustriesRoutingModule } from './industries-routing.module';
 import { AcoPageComponent } from './pages/aco-page/aco-page.component';
 import { IndustriesPageComponent } from './pages/industries-page/industries-page.component';
+import { ValueBasedCarePageComponent } from './pages/value-based-care-page/value-based-care-page.component';
+import { MedicarePageComponent } from './pages/medicare-page/medicare-page.component';
+import { HospitalsPageComponent } from './pages/hospitals-page/hospitals-page.component';
+import { MedicareAdvantagePageComponent } from './pages/medicare-advantage-page/medicare-advantage-page.component';
+import { PhysicianPageComponent } from './pages/physician-page/physician-page.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +18,11 @@ import { IndustriesPageComponent } from './pages/industries-page/industries-page
     FeaturesCarouselComponent,
     FeaturesCardComponent,
     AcoPageComponent,
+    ValueBasedCarePageComponent,
+    MedicarePageComponent,
+    HospitalsPageComponent,
+    MedicareAdvantagePageComponent,
+    PhysicianPageComponent,
   ],
   imports: [CommonModule, IndustriesRoutingModule, SharedModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

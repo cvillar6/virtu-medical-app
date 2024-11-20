@@ -10,10 +10,11 @@
       {{ description }}
     </p>
 
-    <button
-      class="rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple">
+    <a
+      [routerLink]="[link]"
+      class="cursor-pointer rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple hover:bg-purpleHover hover:text-lightPurple2">
       Learn more
-    </button>
+    </a>
   </div>
 
   <div>

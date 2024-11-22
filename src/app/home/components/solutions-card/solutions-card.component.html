@@ -18,13 +18,14 @@
 </article>
 
 <ng-template #desktopCard>
-  <article class="virtu-card flex items-center justify-between gap-8">
+  <article
+    class="virtu-card flex items-center justify-between gap-8 !shadow-none">
     <div>
       <img [src]="image" [alt]="title" />
     </div>
     <div>
       <div class="mb-5">
-        <h2 class="lg:text-xl text-lg font-bold">{{ title }}</h2>
+        <h2 class="text-lg font-bold lg:text-xl">{{ title }}</h2>
       </div>
       <div class="flex items-center gap-8">
         <div class="w-1/2">

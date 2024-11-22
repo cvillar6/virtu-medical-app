@@ -10,23 +10,24 @@
           <nav>
             <ul class="flex gap-4">
               <li>
-                <a href="">
+                <a
+                  href="https://www.instagram.com/virtumedical/"
+                  target="_blank">
                   <img src="assets/instagram.svg" alt="Instagram" />
                 </a>
               </li>
               <li>
-                <a href="">
-                  <img src="assets/whatsapp.svg" alt="WhatsApp" />
-                </a>
-              </li>
-              <li>
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/company/virtu-medical/"
+                  target="_blank">
                   <img src="assets/linkedin.svg" alt="LinkedIn" />
                 </a>
               </li>
               <li>
-                <a href="">
-                  <img src="assets/youtube.svg" alt="YouTube" />
+                <a
+                  href="https://www.facebook.com/people/Virtu-Medical/61560454653712/"
+                  target="_blank">
+                  <img src="assets/youtube.svg" alt="Facebook" />
                 </a>
               </li>
             </ul>
@@ -37,40 +38,54 @@
           <nav class="flex justify-between gap-16">
             <ul class="flex flex-col gap-5">
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['']"
                   >Home</a
                 >
               </li>
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/solutions']"
                   >Solutions</a
                 >
               </li>
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
-                  >Transportation</a
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/industries']"
+                  >Industries</a
                 >
               </li>
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
-                  >Home</a
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/about-us']"
+                  >About us</a
                 >
               </li>
             </ul>
             <ul class="flex flex-col gap-5">
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
-                  >Home</a
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/resources']"
+                  >Resources</a
                 >
               </li>
               <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
-                  >Home</a
-                >
-              </li>
-              <li class="flex">
-                <a class="border-b border-white pb-1 text-white" href=""
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/contact-us']"
                   >Contact us</a
+                >
+              </li>
+              <li class="flex">
+                <a
+                  class="border-b border-white pb-1 text-white"
+                  [routerLink]="['/contact-us']"
+                  >User portal</a
                 >
               </li>
             </ul>
@@ -91,32 +106,52 @@
       <nav class="flex justify-between">
         <ul class="flex flex-col gap-5">
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href="">Home</a>
+            <a class="border-b border-white pb-1 text-white" [routerLink]="['']"
+              >Home</a
+            >
           </li>
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href=""
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/solutions']"
               >Solutions</a
             >
           </li>
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href=""
-              >Transportation</a
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/industries']"
+              >Industries</a
             >
           </li>
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href="">Home</a>
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/about-us']"
+              >About us</a
+            >
           </li>
         </ul>
         <ul class="flex flex-col gap-5">
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href="">Home</a>
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/resources']"
+              >Resources</a
+            >
           </li>
           <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href="">Home</a>
-          </li>
-          <li class="flex">
-            <a class="border-b border-white pb-1 text-white" href=""
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/contact-us']"
               >Contact us</a
+            >
+          </li>
+          <li class="flex">
+            <a
+              class="border-b border-white pb-1 text-white"
+              [routerLink]="['/contact-us']"
+              >User portal</a
             >
           </li>
         </ul>

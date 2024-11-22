@@ -45,5 +45,5 @@ module.exports = {
       '6xl': ['80px', { lineHeight: '88px' }],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/line-clamp')],
 };

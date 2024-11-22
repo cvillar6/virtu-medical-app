@@ -1,22 +1,26 @@
 <main class="py-5 lg:mx-auto lg:max-w-[992px]">
-  <section class="mb-24">
-    <app-banner
-      [title]="'Labs'"
-      [description]="
-        'The Labs Module provides healthcare providers with a comprehensive platform to manage lab tests, offering detailed information on test types, prescribing physicians, results, and recommended testing intervals.'
-      "
-      [legend]="'Labs'"
-      [image]="'assets/analytics-portal/1.png'" />
-  </section>
-
-  <section class="mb-24">
-    <app-feature-banner
-      [title]="'Optimize care, reduce readmissions, and improve outcomes.'"
-      [description]="[
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-      ]"
-      [image]="'assets/analytics-portal/1.png'" />
+  <section class="virtu-container mb-24">
+    <p class="mb-4 text-sm uppercase">Analytics portal</p>
+    <h1 class="mb-8 text-4xl font-bold">Labs module</h1>
+    <p class="mb-5 text-base">
+      The Labs Module provides healthcare providers with a comprehensive
+      platform to manage lab tests, offering detailed information on test types,
+      prescribing physicians, results, and recommended testing intervals. By
+      offering a complete history of patient lab results, the module enables
+      data-driven decision-making and enhances overall patient care.
+    </p>
+    <p class="mb-5 text-base">
+      Laboratory data is a critical resource in optimizing population health
+      management and achieving Value-Based Care objectives. Virtu-Lab reports
+      empower healthcare organizations and systems to identify high-risk
+      patients and develop more effective clinical strategies.
+    </p>
+    <p class="text-base">
+      By leveraging this trusted source of lab data, Virtu’s Labs Module
+      enhances healthcare delivery through its comprehensive reporting and
+      analytics platform, designed to pinpoint high-risk patients and improve
+      clinical outcomes.
+    </p>
   </section>
 
   <section class="virtu-container mb-24">
@@ -104,9 +108,9 @@
         enhance your practice’s efficiency and patient care.
       </p>
       <div class="flex justify-center">
-        <button class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold">
+        <a class="primary-button" [routerLink]="['/contact-us']">
           Request a demo today
-        </button>
+        </a>
       </div>
     </article>
   </section>

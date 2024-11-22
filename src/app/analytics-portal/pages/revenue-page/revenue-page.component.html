@@ -1,22 +1,17 @@
 <main class="py-5 lg:mx-auto lg:max-w-[992px]">
-  <section class="mb-24">
-    <app-banner
-      [title]="'Revenue'"
-      [description]="
-        'The Revenue Module provides a detailed overview of your organization’s total revenue, segmented by line of business (LOB), by month, and per member per month (PMPM).'
-      "
-      [legend]="'Revenue'"
-      [image]="'assets/analytics-portal/1.png'" />
-  </section>
-
-  <section class="mb-24">
-    <app-feature-banner
-      [title]="'Optimize care, reduce readmissions, and improve outcomes.'"
-      [description]="[
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-      ]"
-      [image]="'assets/analytics-portal/1.png'" />
+  <section class="virtu-container mb-24">
+    <p class="mb-4 text-sm uppercase">Analytics portal</p>
+    <h1 class="mb-8 text-4xl font-bold">Revenue module</h1>
+    <p class="mb-5 text-base">
+      The Revenue Module provides a detailed overview of your organization’s
+      total revenue, segmented by line of business (LOB), by month, and per
+      member per month (PMPM).
+    </p>
+    <p class="text-base">
+      It includes visualizations and detailed membership information at the
+      patient level, helping you gain a comprehensive understanding of your
+      financial performance and trends.
+    </p>
   </section>
 
   <section class="virtu-container mb-24">
@@ -93,9 +88,9 @@
         to increase profitability with Virtu’s Revenue Module.
       </p>
       <div class="flex justify-center">
-        <button class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold">
+        <a class="primary-button" [routerLink]="['/contact-us']">
           Request a demo today
-        </button>
+        </a>
       </div>
     </article>
   </section>

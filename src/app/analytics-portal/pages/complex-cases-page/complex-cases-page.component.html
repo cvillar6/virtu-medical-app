@@ -1,22 +1,29 @@
 <main class="py-5 lg:mx-auto lg:max-w-[992px]">
-  <section class="mb-24">
-    <app-banner
-      [title]="'Complex cases'"
-      [description]="
-        'The Complex Cases Module within Virtu’s Analytics Portal empowers healthcare providers to effectively manage patients with multiple, chronic, or rare conditions.'
-      "
-      [legend]="'Complex cases'"
-      [image]="'assets/analytics-portal/1.png'" />
-  </section>
-
-  <section class="mb-24">
-    <app-feature-banner
-      [title]="'Optimize care, reduce readmissions, and improve outcomes.'"
-      [description]="[
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-        'Virtu’s Hospitalization module provides real-time insights to help you optimize care, reduce readmissions, and improve outcomes.',
-      ]"
-      [image]="'assets/analytics-portal/1.png'" />
+  <section class="virtu-container mb-24">
+    <p class="mb-4 text-sm uppercase">Analytics portal</p>
+    <h1 class="mb-8 text-4xl font-bold">Complex cases module</h1>
+    <p class="mb-5 text-base">
+      The Complex Cases Module within Virtu’s Analytics Portal empowers
+      healthcare providers to effectively manage patients with multiple,
+      chronic, or rare conditions.
+    </p>
+    <p class="mb-5 text-base">
+      By integrating comprehensive patient data, from medical history to
+      diagnostic results, this module offers a 360-degree view of each case,
+      facilitating cross- disciplinary collaboration and improving care
+      coordination.
+    </p>
+    <p class="mb-5 text-base">
+      AI-driven insights and predictive analytics enhance diagnostic accuracy,
+      optimize treatment plans, and help providers deliver personalized,
+      evidence-based care.
+    </p>
+    <p class="text-base">
+      With real-time alerts, automated documentation, and data-driven
+      decision-making tools, the Complex Cases Module ensures healthcare teams
+      are equipped to handle even the most challenging cases with efficiency and
+      precision.
+    </p>
   </section>
 
   <section class="virtu-container mb-24">
@@ -190,9 +197,9 @@
         AI-powered Complex Cases Module.
       </p>
       <div class="flex justify-center">
-        <button class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold">
+        <a class="primary-button" [routerLink]="['/contact-us']">
           Request a demo today
-        </button>
+        </a>
       </div>
     </article>
   </section>

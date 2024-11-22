@@ -4,7 +4,7 @@
       [title]="'Analytics portal'"
       [description]="'Providing insightful data for informed decision-making'"
       [legend]="'Analytics portal'"
-      [image]="'assets/analytics-portal/1.png'" />
+      [image]="'assets/analytics-portal/analytics-portal.png'" />
   </section>
 
   <section class="mb-24">
@@ -31,6 +31,46 @@
     <app-features />
   </section>
 
+  <section class="virtu-container mb-24">
+    <ul>
+      <li class="mb-8">
+        <p class="text-sm lg:text-base">
+          <span class="text-sm font-bold lg:text-base"
+            >• Improved Patient Care</span
+          >
+        </p>
+      </li>
+      <li class="mb-8">
+        <p class="text-sm lg:text-base">
+          <span class="text-sm font-bold lg:text-base"
+            >• Streamlined Operations</span
+          >
+        </p>
+      </li>
+      <li class="mb-8">
+        <p class="text-sm lg:text-base">
+          <span class="text-sm font-bold lg:text-base"
+            >• Enhanced Decision-Making</span
+          >
+        </p>
+      </li>
+      <li class="mb-8">
+        <p class="text-sm lg:text-base">
+          <span class="text-sm font-bold lg:text-base"
+            >• Financial Optimization</span
+          >
+        </p>
+      </li>
+      <li class="mb-8">
+        <p class="text-sm lg:text-base">
+          <span class="text-sm font-bold lg:text-base"
+            >• Scalability & Flexibility</span
+          >
+        </p>
+      </li>
+    </ul>
+  </section>
+
   <section>
     <article class="virtu-container">
       <p class="mb-6 text-center text-lg font-bold lg:px-48 lg:text-3xl">
@@ -38,9 +78,9 @@
         Portal?
       </p>
       <div class="flex justify-center">
-        <button class="rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold">
+        <a class="primary-button" [routerLink]="['/contact-us']">
           Request a demo today
-        </button>
+        </a>
       </div>
     </article>
   </section>

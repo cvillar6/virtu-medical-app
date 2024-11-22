@@ -15,3 +15,11 @@ body {
 .virtu-card {
   @apply bg-white shadow-lg rounded-3xl p-5;
 }
+
+.primary-button {
+  @apply cursor-pointer rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary hover:bg-tertiaryHover hover:text-primaryHover;
+}
+
+.secondary-button {
+  @apply rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple hover:bg-purpleHover hover:text-lightPurple2;
+}

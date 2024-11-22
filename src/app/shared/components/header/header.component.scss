@@ -8,10 +8,6 @@ mat-expansion-panel.menu-container {
   li {
     @apply mb-8;
   }
-
-  a {
-    @apply font-poppins font-bold text-primary hover:text-secondary px-1;
-  }
 }
 
 mat-expansion-panel.menu-item-container {
@@ -44,7 +40,7 @@ mat-expansion-panel.menu-item-container {
       }
     }
 
-    mat-panel-title {
+    mat-panel-title a {
       @apply font-poppins font-bold text-primary;
     }
 
@@ -61,7 +57,7 @@ mat-expansion-panel.menu-item-container {
     @apply mb-3 last:mb-0;
   }
 
-  a {
+  .child-link {
     @apply font-poppins font-normal text-primary hover:text-secondary border-b border-primary p-0 hover:border-secondary;
   }
 }

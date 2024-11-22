@@ -18,51 +18,129 @@
     <nav>
       <ul>
         <li>
-          <a class="font-poppins" href="">Home</a>
+          <a
+            class="px-1 font-poppins font-bold text-primary hover:text-secondary"
+            [routerLink]="['']"
+            >Home</a
+          >
         </li>
         <li>
           <mat-expansion-panel class="menu-item-container">
             <mat-expansion-panel-header>
-              <mat-panel-title>Solutions</mat-panel-title>
+              <mat-panel-title
+                ><a [routerLink]="['/solutions']">Solutions</a></mat-panel-title
+              >
             </mat-expansion-panel-header>
             <nav>
               <ul>
                 <li>
-                  <a href="">Analytics Portal</a>
+                  <a
+                    class="child-link"
+                    [routerLink]="['solutions/analytics-portal']"
+                    >Analytics Portal</a
+                  >
                 </li>
                 <li>
-                  <a href="">Imaging</a>
+                  <a class="child-link" [routerLink]="['/solutions/imaging']"
+                    >Imaging</a
+                  >
                 </li>
                 <li>
-                  <a href="">Practice Management</a>
+                  <a
+                    class="child-link"
+                    [routerLink]="['/solutions/hospitalization']"
+                    >Hospitalization</a
+                  >
                 </li>
                 <li>
-                  <a href="">Revenue Cycle Management</a>
+                  <a
+                    class="child-link"
+                    [routerLink]="['/solutions/referral-management']"
+                    >Referral management</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="child-link"
+                    [routerLink]="['/solutions/disenrollment']"
+                    >Disenrollment</a
+                  >
                 </li>
               </ul>
             </nav>
           </mat-expansion-panel>
         </li>
         <li>
-          <a href="">Industries</a>
+          <mat-expansion-panel class="menu-item-container">
+            <mat-expansion-panel-header>
+              <mat-panel-title
+                ><a [routerLink]="['/industries']"
+                  >Industries</a
+                ></mat-panel-title
+              >
+            </mat-expansion-panel-header>
+            <nav>
+              <ul>
+                <li>
+                  <a class="child-link" [routerLink]="['/industries/aco']"
+                    >Accountable Care Organizations (ACOs)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/value-based-care']"
+                    >Value-Based Care Providers</a
+                  >
+                </li>
+                <li>
+                  <a class="child-link" [routerLink]="['/industries/medicare']"
+                    >Medicare/Medicaid Payers</a
+                  >
+                </li>
+                <li>
+                  <a class="child-link" [routerLink]="['/industries/hospitals']"
+                    >Hospitals and Health Systems</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/medicare-advantage']"
+                    >Medicare Advantage</a
+                  >
+                </li>
+                <li>
+                  <a class="child-link" [routerLink]="['/industries/physician']"
+                    >Physician Groups</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </mat-expansion-panel>
         </li>
         <li>
-          <a href="">About us</a>
+          <a
+            class="px-1 font-poppins font-bold text-primary hover:text-secondary"
+            [routerLink]="['/about-us']"
+            >About us</a
+          >
         </li>
         <li>
-          <a href="">Resources</a>
+          <a
+            class="px-1 font-poppins font-bold text-primary hover:text-secondary"
+            href=""
+            >Resources</a
+          >
         </li>
       </ul>
     </nav>
 
     <div class="flex items-center justify-between">
-      <button class="rounded-lg bg-tertiary px-5 py-2.5 font-bold text-primary">
-        Contact us
-      </button>
-      <button
-        class="rounded-lg bg-purple px-5 py-2.5 font-bold text-lightPurple">
+      <a class="primary-button" [routerLink]="['/contact-us']"> Contact us </a>
+      <a class="secondary-button" [routerLink]="['/contact-us']">
         User portal
-      </button>
+      </a>
     </div>
   </mat-expansion-panel>
 </header>
@@ -224,15 +302,10 @@
       </ul>
     </nav>
     <nav class="flex items-center gap-2.5">
-      <a
-        class="cursor-pointer rounded-lg bg-tertiary px-5 py-2.5 text-sm font-bold text-primary hover:bg-tertiaryHover hover:text-primaryHover"
-        [routerLink]="['/contact-us']">
-        Contact us
-      </a>
-      <button
-        class="rounded-lg bg-purple px-5 py-2.5 text-sm font-bold text-lightPurple hover:bg-purpleHover hover:text-lightPurple2">
+      <a class="primary-button" [routerLink]="['/contact-us']"> Contact us </a>
+      <a class="secondary-button" [routerLink]="['/contact-us']">
         User portal
-      </button>
+      </a>
     </nav>
   </header>
 </ng-template>

@@ -17,14 +17,7 @@ export class ContactUsFormComponent {
   constructor(private formBuilder: FormBuilder) {}
 
   onSubmit(): void {
-    throw new Error('Method not implemented.');
-  }
-
-  recipient = 'example@example.com'; // Replace with the actual recipient's email
-  subject = 'Your Subject Here'; // Replace with the email subject
-  body = 'Hello, this is the body of the email.'; // Replace with the email body
-
-  get emailHref(): string {
-    return `mailto:${this.recipient}?subject=${encodeURIComponent(this.subject)}&body=${encodeURIComponent(this.body)}`;
+    const emailHref = `mailto:virtu@gmail.com?subject=Virtu&body=${this.contactUsForm.value.name}%0D%0A${this.contactUsForm.value.email}%0D%0A${this.contactUsForm.value.phone}%0D%0A${this.contactUsForm.value.message}`;
+    window.open(emailHref, '_blank');
   }
 }

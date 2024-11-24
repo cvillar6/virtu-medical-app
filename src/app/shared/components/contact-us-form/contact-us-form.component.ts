@@ -17,6 +17,7 @@ export class ContactUsFormComponent {
   constructor(private formBuilder: FormBuilder) {}
 
   onSubmit(): void {
-    throw new Error('Method not implemented.');
+    const emailHref = `mailto:virtu@gmail.com?subject=Virtu&body=${this.contactUsForm.value.name}%0D%0A${this.contactUsForm.value.email}%0D%0A${this.contactUsForm.value.phone}%0D%0A${this.contactUsForm.value.message}`;
+    window.open(emailHref, '_blank');
   }
 }

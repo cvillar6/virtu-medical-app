@@ -1,0 +1,67 @@
+<main class="py-5 lg:mx-auto lg:max-w-[992px]">
+  <section class="virtu-container mb-24">
+    <img
+      class="lg:absolute lg:left-0 lg:top-0 lg:-z-10 lg:-translate-y-[15%]"
+      src="assets/resources/resources.png"
+      alt="Resources" />
+    <h1 class="mb-5 text-center text-2xl font-bold lg:pt-[700px] lg:text-4xl">
+      Unlock Insights and Expertise with Virtu Medical Resources
+    </h1>
+    <p class="text-sm lg:text-center lg:text-base">
+      Explore our collection of blogs, case studies, and whitepapers to stay
+      informed on the latest healthcare trends, best practices, and innovative
+      solutions. Whether you're looking for expert advice or in-depth analysis,
+      our resources are here to guide you in navigating the evolving landscape
+      of healthcare technology.
+    </p>
+  </section>
+
+  <section class="virtu-container">
+    <ul>
+      <li class="mb-8">
+        <app-blog
+          [image]="'assets/resources/blog-1.png'"
+          [title]="
+            'The Role of Data Analytics in Modern Healthcare: Insights from Virtu’s Analytics Portal'
+          "
+          [description]="
+            'Explore how data analytics transforms healthcare decision-making, featuring examples from Virtu’s Analytics Portal modules.'
+          "
+          [link]="'blog-1'" />
+      </li>
+      <li class="mb-8">
+        <app-blog
+          [image]="'assets/resources/blog-2.png'"
+          [title]="
+            'Improving Patient Engagement Through Technology: Best Practices and Tools'
+          "
+          [description]="
+            'Share actionable tips for improving patient engagement using tools like Virtu’s Patient Outreach module.'
+          "
+          [link]="'blog-2'" />
+      </li>
+      <li class="mb-8">
+        <app-blog
+          [image]="'assets/resources/blog-1.png'"
+          [title]="
+            'Streamlining Healthcare Operations with Integrated Platforms: Why It Matters'
+          "
+          [description]="
+            'Explore how integrated healthcare platforms, like Virtu Medical’s suite of solutions, can streamline workflows, improve efficiency, and reduce administrative burdens for healthcare providers.'
+          "
+          [link]="'blog-3'" />
+      </li>
+      <li class="mb-8">
+        <app-blog
+          [image]="'assets/resources/blog-2.png'"
+          [title]="
+            'Reducing No-Show Rates with Technology: Proven Strategies for Better Scheduling'
+          "
+          [description]="
+            'Dive into the impact of patient no-shows on healthcare efficiency and share how tools like Virtu’s Transportation and Patient Outreach modules help minimize no-show rates.'
+          "
+          [link]="'blog-4'" />
+      </li>
+    </ul>
+  </section>
+</main>

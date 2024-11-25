@@ -3,7 +3,7 @@ swiper-container {
 }
 
 swiper-slide {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center h-auto;
 }
 
 swiper-slide img {

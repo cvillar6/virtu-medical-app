@@ -31,6 +31,7 @@ module.exports = {
         'industries-banner': "url('assets/industries/industries-banner.png')",
         'use-case-1': "url('assets/industries/use-case-1.png')",
         'use-case-2': "url('assets/industries/use-case-2.png')",
+        footer: "url('assets/footer/footer.png')",
       },
     },
     fontSize: {

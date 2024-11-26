@@ -17,7 +17,7 @@ export class ContactUsFormComponent {
   constructor(private formBuilder: FormBuilder) {}
 
   onSubmit(): void {
-    const emailHref = `mailto:virtu@gmail.com?subject=Virtu&body=${this.contactUsForm.value.name}%0D%0A${this.contactUsForm.value.email}%0D%0A${this.contactUsForm.value.phone}%0D%0A${this.contactUsForm.value.message}`;
+    const emailHref = `mailto:info@virtumedical.com?subject=Virtu&body=${this.contactUsForm.value.name}%0D%0A${this.contactUsForm.value.email}%0D%0A${this.contactUsForm.value.phone}%0D%0A${this.contactUsForm.value.message}`;
     window.open(emailHref, '_blank');
   }
 }

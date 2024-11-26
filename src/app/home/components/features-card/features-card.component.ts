@@ -6,7 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./features-card.component.scss'],
 })
 export class FeaturesCardComponent {
-  @Input() legend: string = 'Solutions';
   @Input() title!: string;
   @Input() description!: string;
 }

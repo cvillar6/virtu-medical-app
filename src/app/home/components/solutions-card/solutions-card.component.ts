@@ -11,7 +11,6 @@ export class SolutionsCardComponent implements OnDestroy {
   @Input() title!: string;
   @Input() description!: string;
   @Input() image!: string;
-  @Input() list!: string[];
 
   isDesktop: boolean = false;
 

@@ -21,3 +21,11 @@ swiper-container::part(pagination) {
 swiper-container::part(bullet-active) {
   @apply bg-tertiary;
 }
+
+swiper-container::part(button-prev) {
+  @apply text-tertiary;
+}
+
+swiper-container::part(button-next) {
+  @apply text-tertiary mr-2;
+}

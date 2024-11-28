@@ -10,11 +10,6 @@
       {{ description }}
     </p>
   </div>
-  <div class="pl-8">
-    <ul>
-      <li class="text-sm" *ngFor="let feature of list">• {{ feature }}</li>
-    </ul>
-  </div>
 </article>
 
 <ng-template #desktopCard>
@@ -28,19 +23,12 @@
         <h2 class="text-lg font-bold lg:text-xl">{{ title }}</h2>
       </div>
       <div class="flex items-center gap-8">
-        <div class="w-1/2">
+        <div>
           <div>
             <p class="text-sm lg:text-base">
               {{ description }}
             </p>
           </div>
-        </div>
-        <div class="w-1/2 pr-4">
-          <ul>
-            <li class="text-sm lg:text-base" *ngFor="let feature of list">
-              • {{ feature }}
-            </li>
-          </ul>
         </div>
       </div>
     </div>

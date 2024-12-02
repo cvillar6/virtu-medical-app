@@ -6,8 +6,17 @@
         {{ title }}
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <p class="font-poppins text-sm !text-primary lg:text-base">
+    <p
+      *ngIf="description; else descriptionList"
+      class="font-poppins text-sm !text-primary lg:text-base">
       {{ description }}
     </p>
+    <ng-template #descriptionList>
+      <ul class="font-poppins text-sm !text-primary lg:text-base">
+        <li class="mb-2" *ngFor="let item of list">
+          <span class="font-bold">{{ item.title }}</span> {{ item.description }}
+        </li>
+      </ul>
+    </ng-template>
   </mat-expansion-panel>
 </mat-accordion>

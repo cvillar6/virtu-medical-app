@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class KeyFeatureComponent {
   @Input() title!: string;
   @Input() description!: string;
+  @Input() list!: { title: string; description: string }[];
 }

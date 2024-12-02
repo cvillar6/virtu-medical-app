@@ -199,9 +199,33 @@
       <li class="mb-4 lg:mb-0">
         <app-key-feature
           [title]="'Generate Detailed Reports'"
-          [description]="
-            '1. Identifies top ten reasons for disenrollment: Provides a ranked list of the most common reasons patients cite for leaving, offering critical insights for service improvements. 2. Discovers new PCPs attracting patients: Reveals where patients go after disenrollment, identifying if specific providers or clinics are attracting disenrolled patients. 3. Pinpoints top five value-added service gaps: Highlights gaps in services that patients found valuable but lacking in their current plan, providing a roadmap for strategic improvements. 4. Tracks reenrollment trends: Monitors patients who initially disenrolled but later rejoined the plan, helping to understand what may have motivated them to return and where to refine retention strategies. 5. Keeps track of unfinished and unanswered surveys: Monitors patients who haven’t completed their disenrollment surveys or left them unfinished. Follow-up functionality ensures no feedback is lost, allowing for a comprehensive understanding of the factors driving disenrollment.'
-          " />
+          [list]="[
+            {
+              title: '1. Identifies top ten reasons for disenrollment:',
+              description:
+                'Provides a ranked list of the most common reasons patients cite for leaving, offering critical insights for service improvements.',
+            },
+            {
+              title: '2. Discovers new PCPs attracting patients:',
+              description:
+                'Reveals where patients go after disenrollment, identifying if specific providers or clinics are attracting disenrolled patients.',
+            },
+            {
+              title: '3. Pinpoints top five value-added service gaps:',
+              description:
+                'Highlights gaps in services that patients found valuable but lacking in their current plan, providing a roadmap for strategic improvements.',
+            },
+            {
+              title: '4. Tracks reenrollment trends:',
+              description:
+                'Monitors patients who initially disenrolled but later rejoined the plan, helping to understand what may have motivated them to return and where to refine retention strategies.',
+            },
+            {
+              title: '5. Keeps track of unfinished and unanswered surveys:',
+              description:
+                'Monitors patients who haven’t completed their disenrollment surveys or left them unfinished. Follow-up functionality ensures no feedback is lost, allowing for a comprehensive understanding of the factors driving disenrollment.',
+            },
+          ]" />
       </li>
     </ul>
   </section>

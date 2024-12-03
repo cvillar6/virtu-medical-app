@@ -21,6 +21,7 @@
           <a
             class="px-1 font-poppins font-bold text-primary hover:text-secondary"
             [routerLink]="['']"
+            (click)="expandMenu()"
             >Home</a
           >
         </li>
@@ -28,7 +29,9 @@
           <mat-expansion-panel class="menu-item-container">
             <mat-expansion-panel-header>
               <mat-panel-title
-                ><a [routerLink]="['/solutions']">Solutions</a></mat-panel-title
+                ><a [routerLink]="['/solutions']" (click)="expandMenu()"
+                  >Solutions</a
+                ></mat-panel-title
               >
             </mat-expansion-panel-header>
             <nav>
@@ -37,11 +40,15 @@
                   <a
                     class="child-link"
                     [routerLink]="['solutions/analytics-portal']"
+                    (click)="expandMenu()"
                     >Analytics Portal</a
                   >
                 </li>
                 <li>
-                  <a class="child-link" [routerLink]="['/solutions/imaging']"
+                  <a
+                    class="child-link"
+                    [routerLink]="['/solutions/imaging']"
+                    (click)="expandMenu()"
                     >Imaging</a
                   >
                 </li>
@@ -49,6 +56,7 @@
                   <a
                     class="child-link"
                     [routerLink]="['/solutions/hospitalization']"
+                    (click)="expandMenu()"
                     >Hospitalization</a
                   >
                 </li>
@@ -56,6 +64,7 @@
                   <a
                     class="child-link"
                     [routerLink]="['/solutions/referral-management']"
+                    (click)="expandMenu()"
                     >Referral management</a
                   >
                 </li>
@@ -63,6 +72,7 @@
                   <a
                     class="child-link"
                     [routerLink]="['/solutions/disenrollment']"
+                    (click)="expandMenu()"
                     >Disenrollment</a
                   >
                 </li>
@@ -70,6 +80,7 @@
                   <a
                     class="child-link"
                     [routerLink]="['/solutions/transportation']"
+                    (click)="expandMenu()"
                     >Transportation</a
                   >
                 </li>
@@ -81,7 +92,7 @@
           <mat-expansion-panel class="menu-item-container">
             <mat-expansion-panel-header>
               <mat-panel-title
-                ><a [routerLink]="['/industries']"
+                ><a [routerLink]="['/industries']" (click)="expandMenu()"
                   >Industries</a
                 ></mat-panel-title
               >
@@ -89,7 +100,10 @@
             <nav>
               <ul>
                 <li>
-                  <a class="child-link" [routerLink]="['/industries/aco']"
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/aco']"
+                    (click)="expandMenu()"
                     >Accountable Care Organizations (ACOs)</a
                   >
                 </li>
@@ -97,16 +111,23 @@
                   <a
                     class="child-link"
                     [routerLink]="['/industries/value-based-care']"
+                    (click)="expandMenu()"
                     >Value-Based Care Providers</a
                   >
                 </li>
                 <li>
-                  <a class="child-link" [routerLink]="['/industries/medicare']"
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/medicare']"
+                    (click)="expandMenu()"
                     >Medicare/Medicaid Payers</a
                   >
                 </li>
                 <li>
-                  <a class="child-link" [routerLink]="['/industries/hospitals']"
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/hospitals']"
+                    (click)="expandMenu()"
                     >Hospitals and Health Systems</a
                   >
                 </li>
@@ -114,11 +135,15 @@
                   <a
                     class="child-link"
                     [routerLink]="['/industries/medicare-advantage']"
+                    (click)="expandMenu()"
                     >Medicare Advantage</a
                   >
                 </li>
                 <li>
-                  <a class="child-link" [routerLink]="['/industries/physician']"
+                  <a
+                    class="child-link"
+                    [routerLink]="['/industries/physician']"
+                    (click)="expandMenu()"
                     >Physician Groups</a
                   >
                 </li>
@@ -130,6 +155,7 @@
           <a
             class="px-1 font-poppins font-bold text-primary hover:text-secondary"
             [routerLink]="['/about-us']"
+            (click)="expandMenu()"
             >About us</a
           >
         </li>
@@ -137,6 +163,7 @@
           <a
             class="px-1 font-poppins font-bold text-primary hover:text-secondary"
             [routerLink]="['/resources']"
+            (click)="expandMenu()"
             >Resources</a
           >
         </li>
@@ -144,8 +171,16 @@
     </nav>
 
     <div class="flex items-center justify-between">
-      <a class="primary-button" [routerLink]="['/contact-us']"> Contact us </a>
-      <a class="secondary-button" [routerLink]="['/contact-us']">
+      <a
+        class="primary-button"
+        [routerLink]="['/contact-us']"
+        (click)="expandMenu()">
+        Contact us
+      </a>
+      <a
+        class="secondary-button"
+        [routerLink]="['/contact-us']"
+        (click)="expandMenu()">
         User portal
       </a>
     </div>

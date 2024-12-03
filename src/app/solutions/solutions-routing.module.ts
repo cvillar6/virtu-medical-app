@@ -5,6 +5,7 @@ import { HospitalizationPageComponent } from './pages/hospitalization-page/hospi
 import { ImagingPageComponent } from './pages/imaging-page/imaging-page.component';
 import { PatientOutreachPageComponent } from './pages/patient-outreach-page/patient-outreach-page.component';
 import { ReferralManagementPageComponent } from './pages/referral-management-page/referral-management-page.component';
+import { TransportationPageComponent } from './pages/transportation-page/transportation-page.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'disenrollment',
     component: DisenrollmentPageComponent,
+  },
+  {
+    path: 'transportation',
+    component: TransportationPageComponent,
   },
   {
     path: '**',
